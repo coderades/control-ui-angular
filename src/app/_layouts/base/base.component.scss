@@ -1,0 +1,18 @@
+main {
+  padding: 1rem;
+}
+
+mat-sidenav {
+  margin: 16px;
+  width: 200px;
+  border-right: none;
+  background: #002b5c;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+mat-sidenav-container {
+  height: 100vh;
+}

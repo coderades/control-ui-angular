@@ -1,0 +1,15 @@
+<mat-sidenav-container>
+  <mat-sidenav #sidenav mode="over" [(opened)]="opened">
+    <app-sidenav (openedSideNavData)="openedSideNav($event)"></app-sidenav>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <header>
+      <app-navbar (openedSideNavData)="openedSideNav($event)"></app-navbar>
+    </header>
+    <section>
+      <main class="container">
+        <router-outlet></router-outlet>
+      </main>
+    </section>
+  </mat-sidenav-content>
+</mat-sidenav-container>

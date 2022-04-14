@@ -1,0 +1,30 @@
+<mat-toolbar class="mat-elevation-z8">
+  <div mat-button fxHide.gt-xs>
+    <button mat-icon-button (click)="openedSideNav()">
+      <mat-icon>menu</mat-icon>
+    </button>
+  </div>
+  <button mat-button class="menu-button-logo" routerLink="/home">
+    <mat-icon>eco</mat-icon><span>CONTROL</span>
+  </button>
+  <div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs>
+    <span>
+      <button mat-button routerLink="/finder">
+        <span>Finder</span>
+      </button>
+      <button mat-button routerLink="/dashboard">
+        <span>Dashboard</span>
+      </button>
+    </span>
+    <div class="spacer"></div>
+    <button mat-icon-button>
+      <mat-icon>info</mat-icon>
+    </button>
+    <button mat-icon-button routerLink="/user-find">
+      <mat-icon>person</mat-icon>
+    </button>
+    <button mat-icon-button (click)="openDialog()">
+      <mat-icon>exit_to_app</mat-icon>
+    </button>
+  </div>
+</mat-toolbar>
